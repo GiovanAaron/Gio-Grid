@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import GreenResultCard from './components/green_result_card/GreenResultCard';
 import NotGreenResultCard from './components/not_green_result_card/NotGreenResultCard';
+import Footer from './components/footer/Footer';
 import fetchEnergyData from './hook/apiCall';
 import { filterByBaselineSettlementPeriod, calculateEnergyTotals, compareEnergyTotals,calculateGreenPercentage } from './utils/data_context';
 
@@ -45,6 +46,7 @@ function App() {
                     setEnergyStatus={setEnergyStatus} 
                 />
             )}
+            <Footer />
         </>
     );
 

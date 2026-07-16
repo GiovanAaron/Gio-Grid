@@ -1,0 +1,27 @@
+.logo {
+
+    max-width: 1.2rem;
+}
+
+.developer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    
+
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+footer {
+
+    /* background-color:red; */
+}
