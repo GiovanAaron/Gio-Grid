@@ -164,9 +164,30 @@
 }
 
 .content {
+  position: relative;
   height: 100%;
   padding: 7.5rem 2.5rem 2.25rem;
   box-sizing: border-box;
+}
+
+.contentLayer {
+  position: absolute;
+  inset: 7.5rem 2.5rem 2.25rem;
+  transition: opacity 450ms ease-in-out;
+}
+
+.cardChrome {
+  transition: opacity 450ms ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .welcome {
@@ -261,6 +282,7 @@
 
 @media (max-height: 680px) {
   .content { padding-top: 6rem; }
+  .contentLayer { top: 6rem; }
   .resultText, .advisory { margin-top: 0.75rem; }
 }
 
@@ -270,7 +292,9 @@
   }
 
   .cardInner,
-  .infoButton {
+  .infoButton,
+  .contentLayer,
+  .cardChrome {
     transition: none;
   }
 

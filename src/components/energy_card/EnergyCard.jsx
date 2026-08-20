@@ -137,47 +137,67 @@ function EnergyCard() {
           className={`${styles.face} ${styles.front}`}
           aria-hidden={isShowingAbout}
         >
-          {!isShowingWelcome && (
-            <>
-              <button
-                type="button"
-                className={styles.infoButton}
-                aria-label="About Eco Grid Monitor"
-                onClick={() => flipCard(true)}
-              >
-                ?
-              </button>
-              <img
-                className={styles.logo}
-                src={gioGridTrademark}
-                alt="Gio Grid"
-              />
-            </>
-          )}
-          <div className={styles.content}>
-            {isShowingWelcome && <WelcomeContent />}
-            {!isShowingWelcome && state.status === "loading" && (
-              <LoadingContent />
-            )}
-            {!isShowingWelcome && state.status === "success" && (
-              <ResultContent result={state.result} onRefresh={refresh} />
-            )}
-            {!isShowingWelcome && state.status === "error" && (
-              <div className={styles.error} role="alert">
-                <p>We couldn't load the latest energy data.</p>
-                <button
-                  type="button"
-                  className={styles.refreshButton}
-                  onClick={refresh}
-                >
-                  Try Again
-                </button>
-              </div>
-            )}
+          <div
+            className={`${styles.cardChrome} ${
+              isShowingWelcome ? styles.hidden : styles.visible
+            }`}
+            aria-hidden={isShowingWelcome}
+          >
+            <button
+              type="button"
+              className={styles.infoButton}
+              aria-label="About Eco Grid Monitor"
+              onClick={() => flipCard(true)}
+            >
+              ?
+            </button>
+            <img
+              className={styles.logo}
+              src={gioGridTrademark}
+              alt="Gio Grid"
+            />
           </div>
-          {!isShowingWelcome && (
+          <div className={styles.content}>
+            <div
+              className={`${styles.contentLayer} ${
+                isShowingWelcome ? styles.visible : styles.hidden
+              }`}
+              aria-hidden={!isShowingWelcome}
+            >
+              <WelcomeContent />
+            </div>
+            <div
+              className={`${styles.contentLayer} ${
+                isShowingWelcome ? styles.hidden : styles.visible
+              }`}
+              aria-hidden={isShowingWelcome}
+            >
+              {state.status === "loading" && <LoadingContent />}
+              {state.status === "success" && (
+                <ResultContent result={state.result} onRefresh={refresh} />
+              )}
+              {state.status === "error" && (
+                <div className={styles.error} role="alert">
+                  <p>We couldn't load the latest energy data.</p>
+                  <button
+                    type="button"
+                    className={styles.refreshButton}
+                    onClick={refresh}
+                  >
+                    Try Again
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+          <div
+            className={`${styles.cardChrome} ${
+              isShowingWelcome ? styles.hidden : styles.visible
+            }`}
+            aria-hidden={isShowingWelcome}
+          >
             <small className={styles.attribution}>-Powered by ElexonAPI-</small>
-          )}
+          </div>
           {isFlipping && (
             <div className={styles.flipOverlay} aria-hidden="true" />
           )}
