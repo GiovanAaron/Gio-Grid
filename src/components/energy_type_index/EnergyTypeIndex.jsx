@@ -22,7 +22,7 @@ const energyTypes = [
     ],
   },
   {
-    rating: 'Not green',
+    rating: 'Not Green',
     types: ['Gas turbine', 'Coal fired', 'Oil fired'],
   },
 ];

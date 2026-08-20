@@ -19,15 +19,27 @@
 .logo {
   position: absolute;
   z-index: 1;
-  top: 1.25rem;
+  top: 1rem;
   left: 50%;
   width: min(17.156rem, 55%);
   transform: translateX(-50%);
 }
 
+.attribution {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.625rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
 .content {
   height: 100%;
-  padding: 7.5rem 2.5rem 2rem;
+  padding: 7.5rem 2.5rem 2.25rem;
   box-sizing: border-box;
 }
 
@@ -69,8 +81,9 @@
 .amberDot { background: #b78702; }
 
 .resultText {
-  margin-top: 1.5rem;
+  margin-top: max(.5rem, .2rem);
   font-weight: 500;
+  
 }
 
 .resultText p { margin: 0; }
@@ -89,7 +102,7 @@
 
 .refreshButton {
   min-width: 8rem;
-  margin-top: 1.5rem;
+  margin-top: 10%;
   border-radius: 0;
   background-color: rgba(2, 183, 130, 0.61);
   color: #e8e8e8;

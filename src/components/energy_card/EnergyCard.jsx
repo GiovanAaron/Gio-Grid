@@ -45,12 +45,12 @@ function ResultContent({ result, onRefresh }) {
           We advise that you reduce your energy consumption
         </p>
       )}
-      <i className={styles.disclaimer}>
-        Disclaimer: Energy data is reported with an approximate 90-minute delay.
-      </i>
       <button type="button" className={styles.refreshButton} onClick={onRefresh}>
         Check Again
       </button>
+      <i className={styles.disclaimer}>
+        Disclaimer: Energy data is reported with an approximate 90-minute delay.
+      </i>
     </div>
   );
 }
@@ -105,6 +105,7 @@ function EnergyCard() {
           </div>
         )}
       </div>
+      <small className={styles.attribution}>-Powered by ElexonAPI-</small>
     </section>
   );
 }
