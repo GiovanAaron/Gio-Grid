@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 import githubLogo from "../../assets/github_logo.svg"; // Adjust the path as necessary
 
 const Footer = () => {
