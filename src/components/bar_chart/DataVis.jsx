@@ -6,22 +6,6 @@ import styles from './DataVis.module.css';
 // Register necessary Chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const data = {
-  labels: ['Green', 'Not Green', 'Neutral'],
-  datasets: [
-    {
-      label: 'Energy Breakdown',
-      data: [16177, 5194, 2354], // Your data values for each category
-      backgroundColor: ['#02B782', '#FF6D6D', '#D9D9D9'], // Assign colors for each bar
-      borderColor: ['#02B782', '#FF6D6D', '#D9D9D9'],
-      borderWidth: 1,
-      barThickness: 40, // Set the bar thickness (width)
-      categoryPercentage: .2, // Maximize the use of space for each category
-      barPercentage: 0.8,  // Control the width of the bars relative to the category
-    },
-  ],
-};
-
 const options = {
   responsive: true,
   layout: {
@@ -62,13 +46,28 @@ const options = {
 }
 
 
-const DataVis = ({ stats }) => (
+const DataVis = ({ stats }) => {
+  const data = {
+    labels: ['Green', 'Not Green', 'Neutral'],
+    datasets: [
+      {
+        label: 'Energy Breakdown',
+        data: [stats.Green, stats['Not green'], stats.Neutral],
+        backgroundColor: ['#02B782', '#FF6D6D', '#D9D9D9'],
+        borderColor: ['#02B782', '#FF6D6D', '#D9D9D9'],
+        borderWidth: 1,
+        barThickness: 40,
+        categoryPercentage: 0.2,
+        barPercentage: 0.8,
+      },
+    ],
+  };
 
-  
-
-  <div className={styles.dataVisContainer}>
-    <Bar data={data} options={options} />
-  </div>
-);
+  return (
+    <div className={styles.dataVisContainer}>
+      <Bar data={data} options={options} />
+    </div>
+  );
+};
 
 export default DataVis;

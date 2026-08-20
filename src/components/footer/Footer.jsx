@@ -4,10 +4,10 @@ import githubLogo from "../../assets/github_logo.svg"; // Adjust the path as nec
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.developer}>
-          <p style={{paddingBottom: ".4rem"}}>Developed by Giovan Aaron</p> 
+          <p>Developed by Giovan Aaron</p>
           <a href="https://github.com/GiovanAaron" target="_blank" rel="noopener noreferrer">
             <img src={githubLogo} alt="Developer Image" className={styles.logo} />
           </a>
