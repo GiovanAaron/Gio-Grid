@@ -57,6 +57,13 @@ function ResultContent({ result, onRefresh }) {
 
 function EnergyCard() {
   const [state, setState] = useState({ status: 'loading', result: null });
+  const [isShowingAbout, setIsShowingAbout] = useState(false);
+  const [isFlipping, setIsFlipping] = useState(false);
+
+  const flipCard = (showAbout) => {
+    setIsFlipping(true);
+    setIsShowingAbout(showAbout);
+  };
 
   const refresh = useCallback(async () => {
     setState((current) => ({ ...current, status: 'loading' }));
@@ -90,22 +97,65 @@ function EnergyCard() {
 
   return (
     <section className={styles.card}>
-      <img className={styles.logo} src={rendescoGridLogo} alt="Rendesco Grid" />
-      <div className={styles.content}>
-        {state.status === 'loading' && <LoadingContent />}
-        {state.status === 'success' && (
-          <ResultContent result={state.result} onRefresh={refresh} />
-        )}
-        {state.status === 'error' && (
-          <div className={styles.error} role="alert">
-            <p>We couldn't load the latest energy data.</p>
-            <button type="button" className={styles.refreshButton} onClick={refresh}>
-              Try Again
-            </button>
+      <div
+        className={`${styles.cardInner} ${isShowingAbout ? styles.flipped : ''}`}
+        onTransitionEnd={(event) => {
+          if (event.target === event.currentTarget && event.propertyName === 'transform') {
+            setIsFlipping(false);
+          }
+        }}
+      >
+        <div className={`${styles.face} ${styles.front}`} aria-hidden={isShowingAbout}>
+          <button
+            type="button"
+            className={styles.infoButton}
+            aria-label="About Eco Grid Monitor"
+            onClick={() => flipCard(true)}
+          >
+            ?
+          </button>
+          <img className={styles.logo} src={rendescoGridLogo} alt="Rendesco Grid" />
+          <div className={styles.content}>
+            {state.status === 'loading' && <LoadingContent />}
+            {state.status === 'success' && (
+              <ResultContent result={state.result} onRefresh={refresh} />
+            )}
+            {state.status === 'error' && (
+              <div className={styles.error} role="alert">
+                <p>We couldn't load the latest energy data.</p>
+                <button type="button" className={styles.refreshButton} onClick={refresh}>
+                  Try Again
+                </button>
+              </div>
+            )}
           </div>
-        )}
+          <small className={styles.attribution}>-Powered by ElexonAPI-</small>
+          {isFlipping && <div className={styles.flipOverlay} aria-hidden="true" />}
+        </div>
+
+        <div className={`${styles.face} ${styles.back}`} aria-hidden={!isShowingAbout}>
+          <button
+            type="button"
+            className={styles.infoButton}
+            aria-label="Return to energy results"
+            onClick={() => flipCard(false)}
+          >
+            ×
+          </button>
+          <div className={styles.aboutContent}>
+            <h2>About Eco Grid Monitor</h2>
+            <p>
+              The Eco Grid Monitor is a single-page React application that displays the
+              environmental impact of the electricity grid in Great Britain. Using real-time
+              data from the Elexon API, the app shows the amount of power generated from
+              various fuel sources, categorizing them as &quot;green&quot; or &quot;not green.&quot;
+              The component also encourages users to reduce energy consumption when fossil
+              fuel usage is high, promoting sustainable energy usage.
+            </p>
+          </div>
+          {isFlipping && <div className={styles.flipOverlay} aria-hidden="true" />}
+        </div>
       </div>
-      <small className={styles.attribution}>-Powered by ElexonAPI-</small>
     </section>
   );
 }
