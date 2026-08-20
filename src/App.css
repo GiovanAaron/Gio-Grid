@@ -10,11 +10,17 @@
   align-items: center;
   gap: clamp(0.25rem, 1vh, 0.75rem);
   text-align: center;
+  
 }
 
 .studio-energy {
   display: none;
 }
+
+@media (max-width: 899px) {
+  #root { background: #4d4741; }
+}
+
 
 @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
   .studio-energy {
