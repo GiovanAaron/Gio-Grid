@@ -33,6 +33,12 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Verify GitHub Pages asset paths
+        run: |
+          test -f dist/index.html
+          ! grep -Eq '<script[^>]+src="/src/' dist/index.html
+          grep -q '/Gio-Grid/assets/' dist/index.html
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
