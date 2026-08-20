@@ -81,6 +81,7 @@
   .panel h2 {
     margin: 0;
     font-size: 1.1rem;
+    color:#fff
   }
 
   .intro {
@@ -100,6 +101,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
+    color:#c7c8cfd2;
   }
 
   .group ul {
@@ -112,16 +114,17 @@
 
   .Green,
   .Neutral,
-  .Notgreen {
+  .NotGreen {
     width: 0.6rem;
     height: 0.6rem;
     flex: 0 0 auto;
     border-radius: 50%;
     background: #02b782;
+    
   }
 
   .Neutral { background: #d9d9d9; }
-  .Notgreen { background: #ff6d6d; }
+  .NotGreen { background: #ff6d6d; }
 }
 
 @media (prefers-reduced-motion: reduce) {
