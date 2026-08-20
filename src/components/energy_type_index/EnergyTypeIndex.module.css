@@ -1,0 +1,133 @@
+.index {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .index {
+    width: 3.25rem;
+    height: min(34rem, 75vh);
+    flex: 0 0 auto;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0 18px 18px 0;
+    background: rgba(23, 25, 39, 0.94);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    opacity: 0.6;
+    transition: width 350ms ease, opacity 200ms ease;
+  }
+
+  .index:hover,
+  .index:focus-within,
+  .open {
+    opacity: 1;
+  }
+
+  .open {
+    width: 22rem;
+  }
+
+  .toggle {
+    width: 3.25rem;
+    min-width: 3.25rem;
+    height: 100%;
+    margin: 0;
+    padding: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 0;
+    border-radius: 0;
+    background: rgba(2, 183, 130, 0.32);
+    color: #fff;
+  }
+
+  .toggleLabel {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .chevron {
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 350ms ease;
+  }
+
+  .open .chevron {
+    transform: rotate(180deg);
+  }
+
+  .panel {
+    width: 18.75rem;
+    min-width: 18.75rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-0.75rem);
+    transition: opacity 200ms ease 80ms, transform 250ms ease 80ms;
+  }
+
+  .open .panel {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .panel h2 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    margin: 0.3rem 0 1.25rem;
+    color: #c7c8cf;
+    font-size: 0.78rem;
+  }
+
+  .groups {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .group h3 {
+    margin: 0 0 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .group ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #d9d9d9;
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .Green,
+  .Neutral,
+  .Notgreen {
+    width: 0.6rem;
+    height: 0.6rem;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #02b782;
+  }
+
+  .Neutral { background: #d9d9d9; }
+  .Notgreen { background: #ff6d6d; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index,
+  .chevron,
+  .panel {
+    transition: none;
+  }
+}
