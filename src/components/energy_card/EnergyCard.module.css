@@ -13,6 +13,31 @@
   font-family: Inter, sans-serif;
   font-size: 0.938rem;
   text-align: center;
+  transform-origin: 50% 100%;
+  animation: unfoldCard 1800ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes unfoldCard {
+  0% {
+    clip-path: inset(100% 0 0 0 round 23px);
+    opacity: 0;
+    transform: perspective(75rem) translateY(3rem) rotateX(82deg) scaleY(0.12);
+  }
+
+  28% {
+    opacity: 1;
+  }
+
+  72% {
+    clip-path: inset(0 0 0 0 round 23px);
+    transform: perspective(75rem) translateY(0) rotateX(-3deg) scaleY(.98);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0 round 23px);
+    opacity: 1;
+    transform: perspective(75rem) translateY(0) rotateX(0) scaleY(1);
+  }
 }
 
 .cardInner {
@@ -118,10 +143,12 @@
 .logo {
   position: absolute;
   z-index: 1;
-  top: 1rem;
+  top: 1.5rem;
   left: 50%;
-  width: min(17.156rem, 55%);
+  width: min(11rem, 42%);
+  height: auto;
   transform: translateX(-50%);
+  object-fit: contain;
 }
 
 .attribution {
@@ -142,6 +169,22 @@
   box-sizing: border-box;
 }
 
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome img {
+  width: auto;
+  height: min(50%, 32rem);
+  max-width: 50%;
+  object-fit: contain;
+  margin-bottom: 15%;
+}
+
 .loading,
 .error {
   height: 100%;
@@ -150,9 +193,18 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  
+
+  
 }
 
-.loading img { width: 2.813rem; }
+.loading {
+  position: relative;
+    top: -5%;
+
+}
+
+.loading img { width: 2.813rem;}
 
 .result {
   height: 100%;
@@ -213,6 +265,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+  }
+
   .cardInner,
   .infoButton {
     transition: none;

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1452" height="1830" viewBox="0 0 1452 1830" fill="none">
+  <style>
+    svg { background:transparent; }
+    .dark { fill:rgb(255, 255, 255); }
+    .green { fill:rgb(2, 183, 130); }
+  </style>
+
+    <!-- static G -->
+  <path id="G" class="green" d="M722.055 0C323.275 0 0 323.13 0 721.73C5.78656e-05 954.579 110.32 1161.67 281.562 1293.64L347.547 1100.34C249.896 1003.83 189.391 869.841 189.391 721.73C189.391 427.681 427.873 189.307 722.055 189.307C867.139 189.307 998.673 247.286 1094.74 341.328L1228.67 207.477C1098.33 79.1717 919.444 8.16063e-05 722.055 0ZM962.738 699.645L1025.87 878.697H1231.11C1206.68 957.908 1164.34 1029.27 1108.71 1087.94L1181.1 1278.86C1341.72 1146.48 1444.11 946.059 1444.11 721.73C1444.11 714.342 1443.99 706.98 1443.77 699.646H1412.54V699.645H962.738Z"/>
+
+  <!-- A frame: one stable state with a restrained mirrored breathing motion -->
+  <g id="A-left-wrap">
+    <path id="A-left" class="dark" d="M707.172 533.167L600.735 533.168L600.735 533.168C600.735 533.168 600.735 533.168 600.735 533.168L157.171 1788.69L339.171 1788.69L707.172 533.167Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.25;.5;.75;1" values=".78;.9;1;.9;.78"/>
+    </path>
+    <animateTransform attributeName="transform" type="translate" dur="3.2s" repeatCount="indefinite" keyTimes="0;.25;.5;.75;1" values="0 0;-5 2;0 0;5 -2;0 0"/>
+  </g>
+
+  <g id="A-right-wrap">
+    <path id="A-right" class="dark" d="M754.5 533.166C754.5 533.166 754.5 533.166 754.5 533.166L860.937 533.167L1304.5 1788.69L1122.5 1788.69L754.5 533.166Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.25;.5;.75;1" values=".78;.9;1;.9;.78"/>
+    </path>
+    <animateTransform attributeName="transform" type="translate" dur="3.2s" repeatCount="indefinite" keyTimes="0;.25;.5;.75;1" values="0 0;5 2;0 0;-5 -2;0 0"/>
+  </g>
+
+  <!-- Tower pulse: one continuous top-to-bottom loading wave -->
+  <g id="tower-top" transform="translate(730.836 764)"><g>
+    <path class="green" transform="translate(-730.836 -764)" d="M707.393 703L754.279 703L794.038 825L667.634 825Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.10;.20;.30;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.10;.20;.30;1" values="1;1;1.09;1;1"/>
+  </g></g>
+
+  <g id="tower-mid" transform="translate(730.836 930.5)"><g>
+    <path class="green" transform="translate(-730.836 -930.5)" d="M657.686 876L803.986 876L839.934 985L621.737 985Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.20;.30;.40;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.20;.30;.40;1" values="1;1;1.08;1;1"/>
+  </g></g>
+
+  <g id="tower-x-left" transform="translate(730.836 1144)"><g>
+    <path class="green" transform="translate(-730.836 -1144)" d="M634.271 1048L862.573 1168L883.676 1240L613.168 1120Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.30;.40;.50;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.30;.40;.50;1" values="1;1;1.07;1;1"/>
+  </g></g>
+
+  <g id="tower-x-right" transform="translate(730.836 1144)"><g>
+    <path class="green" transform="translate(-730.836 -1144)" d="M827.4 1048L599.099 1168L577.995 1240L848.504 1120Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.40;.50;.60;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.40;.50;.60;1" values="1;1;1.07;1;1"/>
+  </g></g>
+
+  <g id="tower-low" transform="translate(730.836 1302.25)"><g>
+    <path class="green" transform="translate(-730.836 -1302.25)" d="M553.987 1260.5L907.685 1260.5L929.159 1344L532.512 1344Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.50;.60;.70;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.50;.60;.70;1" values="1;1;1.06;1;1"/>
+  </g></g>
+
+  <g id="tower-base" transform="translate(730.836 1517)"><g>
+    <path class="green" fill-rule="evenodd" clip-rule="evenodd" transform="translate(-730.836 -1517)" d="M518.564 1395L943.108 1395L1014.625 1639L447.046 1639Z M976.625 1639C856.625 1532 605.046 1532 485.046 1639L976.625 1639Z">
+      <animate attributeName="opacity" dur="3.2s" repeatCount="indefinite" keyTimes="0;.60;.70;.80;1" values=".42;.42;1;.42;.42"/>
+    </path>
+    <animateTransform attributeName="transform" type="scale" dur="3.2s" repeatCount="indefinite" keyTimes="0;.60;.70;.80;1" values="1;1;1.05;1;1"/>
+  </g></g>
+</svg>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1452" height="1418" viewBox="0 682 1452 1418" fill="none">
+  <style>
+    svg { background: transparent; }
+    .dark { fill:rgb(255, 255, 255); }
+    .green { fill:rgb(2, 183, 130); }
+    .welcome-title, .welcome-detail {
+      fill:rgb(255, 255, 255);
+      font-family:Inter, Arial, sans-serif;
+      text-anchor:middle;
+    }
+    .welcome-title { font-size:92px; font-weight:700; letter-spacing:1px; }
+    .welcome-detail { font-size:42px; font-weight:400; letter-spacing:2px; }
+  </style>
+  <defs>
+    <clipPath id="between-a-legs" clipPathUnits="userSpaceOnUse">
+      <path d="M803.203 609.709L382.753 1767.16L1081.11 1767.16L659.392 648.928Z">
+        <animate begin="-4.36s" attributeName="d" dur="9.44s" repeatCount="1" fill="freeze"
+          keyTimes="0;0.186441;0.305085;0.949153;0.995763;1"
+          values="M803.203 609.709L382.753 1767.16L1081.11 1767.16L659.392 648.928Z;M803.203 609.709L382.753 1767.16L1081.11 1767.16L659.392 648.928Z;M707.172 533.167L339.171 1788.69L1122.5 1788.69L754.5 533.166Z;M707.172 533.167L339.171 1788.69L1122.5 1788.69L754.5 533.166Z;M803.203 609.709L382.753 1767.16L1081.11 1767.16L659.392 648.928Z;M803.203 609.709L382.753 1767.16L1081.11 1767.16L659.392 648.928Z"/>
+      </path>
+    </clipPath>
+    <clipPath id="bottom-fold-window" clipPathUnits="userSpaceOnUse">
+      <rect x="145.960" y="0" height="1830" width="941.490">
+        <animate begin="-4.36s" attributeName="width" dur="9.44s" repeatCount="1" fill="freeze"
+          keyTimes="0;0.186441;0.245763;0.305085;0.830508;0.864407;0.898305;0.932203;1"
+          values="941.490;941.490;423.671;0;0;188.298;611.969;941.490;941.490"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- icon artwork: 60% scale, centered and bottom-aligned -->
+  <g id="welcome-icon" transform="translate(290.4 732) scale(.6)">
+  <!-- static G -->
+  <path id="G" class="green" d="M722.055 0C323.275 0 0 323.13 0 721.73C5.78656e-05 954.579 110.32 1161.67 281.562 1293.64L347.547 1100.34C249.896 1003.83 189.391 869.841 189.391 721.73C189.391 427.681 427.873 189.307 722.055 189.307C867.139 189.307 998.673 247.286 1094.74 341.328L1228.67 207.477C1098.33 79.1717 919.444 8.16063e-05 722.055 0ZM962.738 699.645L1025.87 878.697H1231.11C1206.68 957.908 1164.34 1029.27 1108.71 1087.94L1181.1 1278.86C1341.72 1146.48 1444.11 946.059 1444.11 721.73C1444.11 714.342 1443.99 706.98 1443.77 699.646H1412.54V699.645H962.738Z"/>
+
+    <!-- mechanical tower assembly -->
+  <g id="tower-top">
+    <g transform="translate(730.836 764)"><g>
+      <path class="green" transform="translate(-730.836 -764)" d="M707.393 703.000L754.279 703.000L794.038 825.000L667.634 825.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.186441;0.216102;0.245763;0.830508;0.864407;0.898305;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.216102;0.245763;0.830508;0.864407;0.898305;1"
+      values="0 -140;0 -140;0 18;0 0;0 0;0 12;0 -120;0 -140"/>
+  </g>
+
+  <g id="tower-mid">
+    <g transform="translate(730.836 930.5)"><g>
+      <path class="green" transform="translate(-730.836 -930.5)" d="M657.686 876.000L803.986 876.000L839.934 985.000L621.737 985.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.216102;0.245763;0.275424;0.830508;0.864407;0.915254;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.216102;0.245763;0.275424;0.830508;0.864407;0.915254;1"
+      values="0 -150;0 -150;0 14;0 0;0 0;0 10;0 -130;0 -150"/>
+  </g>
+
+  <g id="tower-x-left">
+    <g transform="translate(730.836 1144)"><g>
+      <path class="green" transform="translate(-730.836 -1144)" d="M634.271 1048.000L862.573 1168.000L883.676 1240.000L613.168 1120.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.245763;0.275424;0.305085;0.830508;0.872881;0.923729;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="rotate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.245763;0.275424;0.305085;0.830508;0.872881;0.923729;1"
+      values="-74 726 1142;-74 726 1142;5 726 1142;0 726 1142;0 726 1142;4 726 1142;-68 726 1142;-74 726 1142"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.245763;0.275424;0.305085;0.830508;0.872881;0.923729;1"
+      values="-110 -24; -110 -24; 10 8; 0 0; 0 0; 8 6; -96 -22; -110 -24"/>
+  </g>
+
+  <g id="tower-x-right">
+    <g transform="translate(730.836 1144)"><g>
+      <path class="green" transform="translate(-730.836 -1144)" d="M827.400 1048.000L599.099 1168.000L577.995 1240.000L848.504 1120.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.275424;0.305085;0.334746;0.830508;0.881356;0.932203;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="rotate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.275424;0.305085;0.334746;0.830508;0.881356;0.932203;1"
+      values="74 726 1142;74 726 1142;-5 726 1142;0 726 1142;0 726 1142;-4 726 1142;68 726 1142;74 726 1142"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.275424;0.305085;0.334746;0.830508;0.881356;0.932203;1"
+      values="110 -24;110 -24;-10 8;0 0;0 0;-8 6;96 -22;110 -24"/>
+  </g>
+
+  <g id="tower-low">
+    <g transform="translate(730.836 1302.25)"><g>
+      <path class="green" transform="translate(-730.836 -1302.25)" d="M553.987 1260.500L907.685 1260.500L929.159 1344.000L532.512 1344.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.305085;0.334746;0.364407;0.830508;0.881356;0.932203;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.305085;0.334746;0.364407;0.830508;0.881356;0.932203;1"
+      values="0 124;0 124;0 -8;0 0;0 0;0 10;0 110;0 124"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.305085;0.334746;0.364407;0.830508;0.881356;0.932203;1"
+      values="0.92 0.92;0.92 0.92;1.02 1.02;1 1;1 1;0.98 0.98;0.92 0.92;0.92 0.92"/>
+  </g>
+
+  <g id="tower-base">
+    <g transform="translate(730.836 1517)"><g>
+      <path class="green" fill-rule="evenodd" clip-rule="evenodd" transform="translate(-730.836 -1517)" d="M518.564 1395.000L943.108 1395.000L1014.625 1639.000L447.046 1639.000Z M976.625 1639.000C856.625 1532.000 605.046 1532.000 485.046 1639.000L976.625 1639.000Z"/>
+      <animateTransform begin="-4.36s" attributeName="transform" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.334746;0.364407;0.394068;0.830508;0.889831;0.949153;1" values="0;0;1.08;1;1;.88;0;0"/>
+      <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.394068;0.411017;0.436441;0.461864;1" values="1 1;1 1;1.04 .92;.97 1.04;1 1;1 1"/>
+    </g></g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.334746;0.364407;0.394068;0.830508;0.889831;0.949153;1"
+      values="0 180;0 180;0 -12;0 0;0 0;0 14;0 168;0 180"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="scale" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.334746;0.364407;0.394068;0.830508;0.889831;0.949153;1"
+      values="0.9 0.9;0.9 0.9;1.02 1.02;1 1;1 1;0.97 0.97;0.9 0.9;0.9 0.9"/>
+  </g>
+
+
+  <!-- morphing A legs -->
+
+  <!-- state 1 lower sweep disconnects -->
+  <g id="state1-bottom-wrap" clip-path="url(#between-a-legs)">
+    <g clip-path="url(#bottom-fold-window)">
+      <path id="G-bottom-mid-section" class="green" d="M722.055 1254.15C833.966 1254.15 937.813 1219.66 1023.54 1160.72L1087.45 1344.36C980.263 1407.34 855.38 1443.46 722.055 1443.46C591.444 1443.46 468.933 1408.8 363.227 1348.17L428.229 1165.89C512.451 1221.67 613.457 1254.15 722.055 1254.15Z">
+        <animate begin="-4.36s" attributeName="fill" dur="9.44s" repeatCount="1" fill="freeze"
+          keyTimes="0;0.186441;0.305085;0.830508;0.864407;0.932203;1"
+          values="rgb(2,183,130);rgb(2,183,130);rgb(255,255,255);rgb(255,255,255);rgb(255,255,255);rgb(2,183,130);rgb(2,183,130)"/>
+      </path>
+    </g>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.245763;0.305085;0.830508;0.864407;0.898305;0.932203;1"
+      values="0 0;0 0;0 52;0 92;0 92;0 62;0 18;0 0;0 0"/>
+  </g>
+
+
+  <g id="A-left-wrap">
+    <path id="A-left" class="dark" d="M658.923 496.93H729.946L774.834 525.755C802.748 543.68 814.525 578.536 803.203 609.709L382.753 1767.16H203.798L658.923 496.93Z">
+      <animate begin="-4.36s" attributeName="d" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.186441;0.305085;0.949153;0.995763;1"
+        values="M658.923 496.93L729.946 496.93L774.834 525.755C802.748 543.68 814.525 578.536 803.203 609.709L382.753 1767.16L203.798 1767.16L658.923 496.93Z;M658.923 496.93L729.946 496.93L774.834 525.755C802.748 543.68 814.525 578.536 803.203 609.709L382.753 1767.16L203.798 1767.16L658.923 496.93Z;M707.172 533.167L600.735 533.168L600.735 533.168C600.735 533.168 600.735 533.168 600.735 533.168L157.171 1788.69L339.171 1788.69L707.172 533.167Z;M707.172 533.167L600.735 533.168L600.735 533.168C600.735 533.168 600.735 533.168 600.735 533.168L157.171 1788.69L339.171 1788.69L707.172 533.167Z;M658.923 496.93L729.946 496.93L774.834 525.755C802.748 543.68 814.525 578.536 803.203 609.709L382.753 1767.16L203.798 1767.16L658.923 496.93Z;M658.923 496.93L729.946 496.93L774.834 525.755C802.748 543.68 814.525 578.536 803.203 609.709L382.753 1767.16L203.798 1767.16L658.923 496.93Z"/>
+    </path>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.245763;0.305085;0.949153;0.974576;0.991525;1"
+      values="0 0;0 0;-16 -18;-2 1;0 0;-12 -10;0 0;0 0"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="rotate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.245763;0.305085;0.949153;0.974576;0.991525;1"
+      values="0 726 560;0 726 560;-5 726 560;-0.6 726 560;0 726 560;-3.8 726 560;0 726 560;0 726 560"/>
+  </g>
+
+  <g id="A-right-wrap">
+    <path id="A-right" class="dark" d="M659.392 648.928C638.49 593.504 657.779 530.968 706.273 496.929L787.236 496.2L1243.26 1767.16H1081.11L659.392 648.928Z">
+      <animate begin="-4.36s" attributeName="d" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.186441;0.305085;0.949153;0.995763;1"
+        values="M659.392 648.928C638.49 593.504 657.779 530.968 706.273 496.929L787.236 496.2L1243.26 1767.16L1081.11 1767.16L659.392 648.928Z;M659.392 648.928C638.49 593.504 657.779 530.968 706.273 496.929L787.236 496.2L1243.26 1767.16L1081.11 1767.16L659.392 648.928Z;M754.5 533.166C754.5 533.166 754.5 533.166 754.5 533.166L860.937 533.167L1304.5 1788.69L1122.5 1788.69L754.5 533.166Z;M754.5 533.166C754.5 533.166 754.5 533.166 754.5 533.166L860.937 533.167L1304.5 1788.69L1122.5 1788.69L754.5 533.166Z;M659.392 648.928C638.49 593.504 657.779 530.968 706.273 496.929L787.236 496.2L1243.26 1767.16L1081.11 1767.16L659.392 648.928Z;M659.392 648.928C638.49 593.504 657.779 530.968 706.273 496.929L787.236 496.2L1243.26 1767.16L1081.11 1767.16L659.392 648.928Z"/>
+    </path>
+    <animateTransform begin="-4.36s" attributeName="transform" type="translate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.245763;0.305085;0.949153;0.974576;0.991525;1"
+      values="0 0;0 0;16 -18;2 1;0 0;12 -10;0 0;0 0"/>
+    <animateTransform begin="-4.36s" attributeName="transform" additive="sum" type="rotate" dur="9.44s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.186441;0.245763;0.305085;0.949153;0.974576;0.991525;1"
+      values="0 726 560;0 726 560;5 726 560;0.6 726 560;0 726 560;3.8 726 560;0 726 560;0 726 560"/>
+  </g>
+
+  </g>
+
+  <!-- synchronized welcome text -->
+  <g id="welcome-primary-text">
+    <text class="welcome-title" x="726" y="1940">Gio\/Grid
+      <animate attributeName="opacity" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.29661;0.368644;1" values="1;1;0;0"/>
+    </text>
+    <text class="welcome-detail" x="726" y="2015" opacity="0">Powered by ElexonAPI
+      <animate attributeName="opacity" dur="9.44s" repeatCount="1" fill="freeze"
+        keyTimes="0;0.079449;0.150424;0.29661;0.368644;1"
+        values="0;0;1;1;0;0"/>
+    </text>
+  </g>
+
+  <text id="welcome-creator-text" class="welcome-title" x="726" y="1980" opacity="0">Created by Giovan Aaron
+    <animate attributeName="opacity" dur="9.44s" end="5.6s" repeatCount="1" fill="freeze"
+      keyTimes="0;0.533898;0.59322;0.65678;0.724576;1"
+      values="0;0;1;1;0;0"/>
+  </text>
+
+</svg>
