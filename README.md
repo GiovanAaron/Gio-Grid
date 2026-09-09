@@ -2,9 +2,11 @@
 
 ### 🚨 This web application is optomised to Chrome and Opera web browsers. There may be UI inconsistencies for Safari 🚨
 
-- <a href="https://eco-grid-monitor.netlify.app/" target="_blank" rel="noopener noreferrer">Version 1 🔗 eco-grid-monitor.netlify.app</a>
+- <a href="https://giovanaaron.github.io/Gio-Grid/" target="_blank" rel="noopener noreferrer">Version 1.0.0 🔗 "Gio\\/Grid" Github App </a>
+
+- <a href="https://eco-grid-monitor.netlify.app/" target="_blank" rel="noopener noreferrer">Version 0.1.0 🔗 eco-grid-monitor.netlify.app</a>
   
-- <a href="https://eco-grid-monitor-v2.netlify.app/" target="_blank" rel="noopener noreferrer">Version 2 🔗 eco-grid-monitor-v2.netlify.app</a>
+- <a href="https://eco-grid-monitor-v2.netlify.app/" target="_blank" rel="noopener noreferrer">Version 0.2.0 🔗 eco-grid-monitor-v2.netlify.app</a>
 
 
 #### Description
